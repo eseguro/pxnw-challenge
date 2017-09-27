@@ -6,6 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "pretest": "tsfmt -r --baseDir './src/app' && ng lint",
+    "coverage": "ng test --code-coverage && http-server -c-1 -o -p 9875 ./coverage",
     "test": "ng test",
     "e2e": "ng e2e"
   },
@@ -33,7 +35,9 @@
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
+    "bootstrap-sass": "^3.3.7",
     "codelyzer": "~3.0.1",
+    "file-loader": "^0.8.5",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -42,12 +46,12 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.1.1",
     "protractor": "~5.1.2",
     "ts-node": "~3.0.4",
+    "tslint": "^5.7.0",
     "typescript": "^2.3.4",
-    "file-loader": "^0.8.5",
-    "node-sass": "^4.1.1",
-    "url-loader": "^0.5.7",
-    "bootstrap-sass": "^3.3.7"
+    "typescript-formatter": "^6.0.0",
+    "url-loader": "^0.5.7"
   }
 }

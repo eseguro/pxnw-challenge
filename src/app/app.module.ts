@@ -38,8 +38,8 @@ import { SpinnerComponent } from './shared/components/spinner/spinner.component'
     FormsModule,
     RouterModule.forRoot(AppRoutes)
   ],
-  providers: [{provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

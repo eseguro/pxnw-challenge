@@ -11,7 +11,7 @@ import { Request } from './../../../shared/helpers/request';
 @Injectable()
 export class CommentService {
 
-  constructor (private http: Http) {}
+  constructor(private http: Http) { }
 
   /**
    * Get all comments of a single gist
@@ -19,8 +19,8 @@ export class CommentService {
    */
   public fetchCommentGists(url: string): Observable<any> {
     return this.http
-            .get(url)
-            .map(Request.extractData)
-            .catch(Request.handleError);
+      .get(url)
+      .map(Request.extractData)
+      .catch(Request.handleError);
   }
 }

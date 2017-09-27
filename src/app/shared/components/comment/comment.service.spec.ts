@@ -34,9 +34,9 @@ describe('CommentService', () => {
           provide: Http,
           deps: [MockBackend, BaseRequestOptions],
           useFactory:
-            (backend: XHRBackend, defaultOptions: BaseRequestOptions) => {
-              return new Http(backend, defaultOptions);
-            }
+          (backend: XHRBackend, defaultOptions: BaseRequestOptions) => {
+            return new Http(backend, defaultOptions);
+          }
         }
       ],
       imports: [
@@ -69,7 +69,7 @@ describe('CommentService', () => {
             expect(data[0].id).toEqual(idGist);
             expect(data[0].url).toEqual(`urlCommen/${idComment}`);
           });
-    })));
+      })));
   });
 
 });

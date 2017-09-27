@@ -32,9 +32,9 @@ describe('GistArticleService', () => {
           provide: Http,
           deps: [MockBackend, BaseRequestOptions],
           useFactory:
-            (backend: XHRBackend, defaultOptions: BaseRequestOptions) => {
-              return new Http(backend, defaultOptions);
-            }
+          (backend: XHRBackend, defaultOptions: BaseRequestOptions) => {
+            return new Http(backend, defaultOptions);
+          }
         }
       ],
       imports: [

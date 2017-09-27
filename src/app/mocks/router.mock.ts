@@ -22,12 +22,12 @@ export class MockRouter extends Router {
     });
   }
 
-  public navigate(commands: any[], extras ?: NavigationExtras): Promise < boolean > {
+  public navigate(commands: any[], extras?: NavigationExtras): Promise<boolean> {
     this.route = commands;
     return Promise.resolve(true);
   }
 
-  public navigateByUrl(url: string | UrlTree, extras ?: NavigationExtras): Promise < boolean > {
+  public navigateByUrl(url: string | UrlTree, extras?: NavigationExtras): Promise<boolean> {
     return Promise.resolve(true);
   }
 

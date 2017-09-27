@@ -3,7 +3,7 @@
  */
 
 import { TestBed, inject } from '@angular/core/testing';
-import { HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { RawContentComponent } from './raw-content.component';
 import { RawContentService } from './raw-content.service';

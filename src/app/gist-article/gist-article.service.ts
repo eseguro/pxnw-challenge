@@ -12,7 +12,7 @@ import { API } from './../commons/api';
 @Injectable()
 export class GistArticleService {
 
-  constructor (private http: Http) {}
+  constructor(private http: Http) { }
 
   /**
    * Get all gist of a username
@@ -21,9 +21,9 @@ export class GistArticleService {
   public fetchGists(search): Observable<any> {
     const username = search ? search : 'khriztianmoreno';
     return this.http
-            .get(`${API}/users/${username}/gists`)
-            .map(Request.extractData)
-            .catch(Request.handleError);
+      .get(`${API}/users/${username}/gists`)
+      .map(Request.extractData)
+      .catch(Request.handleError);
   }
 
   /**
@@ -32,8 +32,8 @@ export class GistArticleService {
    */
   public fetchSingleGist(id: string): Observable<any> {
     return this.http
-            .get(`${API}/gists/${id}`)
-            .map(Request.extractData)
-            .catch(Request.handleError);
+      .get(`${API}/gists/${id}`)
+      .map(Request.extractData)
+      .catch(Request.handleError);
   }
 }

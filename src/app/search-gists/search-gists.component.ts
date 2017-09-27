@@ -13,6 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SearchGistsComponent implements OnInit {
 
   public searchForm: FormGroup;
+  public prueba: string;
 
   constructor(private router: Router, public route: ActivatedRoute) { }
 

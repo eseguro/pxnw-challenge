@@ -13,10 +13,10 @@ describe('CommentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpModule ],
-      declarations: [ CommentComponent ]
+      imports: [HttpModule],
+      declarations: [CommentComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

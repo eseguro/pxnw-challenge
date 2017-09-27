@@ -3,7 +3,7 @@
  */
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpModule} from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 import { RawContentService } from './raw-content.service';
 import { RawContentComponent } from './raw-content.component';
@@ -15,13 +15,13 @@ describe('RawContentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RawContentComponent , TruncatePipe],
-      providers:  [RawContentService],
+      declarations: [RawContentComponent, TruncatePipe],
+      providers: [RawContentService],
       imports: [
         HttpModule
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

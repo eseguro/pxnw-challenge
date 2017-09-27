@@ -21,7 +21,7 @@ describe('GistArticleDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpModule , RouterModule],
+      imports: [HttpModule, RouterModule],
       declarations: [
         GistArticleDetailComponent,
         RawContentComponent,
@@ -29,9 +29,9 @@ describe('GistArticleDetailComponent', () => {
         TruncatePipe,
         SpinnerComponent
       ],
-      providers: [{provide: ActivatedRoute, useValue: mockActivatedRoute}]
+      providers: [{ provide: ActivatedRoute, useValue: mockActivatedRoute }]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

@@ -9,7 +9,7 @@ import { RawContentService } from './raw-content.service';
 @Component({
   selector: 'app-raw-content',
   templateUrl: './raw-content.component.html',
-  providers:  [RawContentService]
+  providers: [RawContentService]
 })
 
 export class RawContentComponent implements OnInit {

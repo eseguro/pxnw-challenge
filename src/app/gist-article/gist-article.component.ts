@@ -12,7 +12,7 @@ import { SpinnerComponent } from './../shared/components/spinner/spinner.compone
   selector: 'app-gist-article',
   templateUrl: './gist-article.component.html',
   styleUrls: ['./gist-article.component.scss'],
-  providers:  [GistArticleService]
+  providers: [GistArticleService]
 })
 
 export class GistArticleComponent implements OnInit, OnDestroy {
@@ -26,8 +26,8 @@ export class GistArticleComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private gistArticleService: GistArticleService) { }
 
   public ngOnInit() {
-     this.sub = this.route.params.subscribe(params => {
-       this.getGists(params['search']);
+    this.sub = this.route.params.subscribe(params => {
+      this.getGists(params['search']);
     });
   }
 

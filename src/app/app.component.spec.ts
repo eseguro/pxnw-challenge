@@ -11,7 +11,7 @@ import { GistArticleDetailComponent } from './gist-article-detail/gist-article-d
 import { RawContentComponent } from './shared/components/raw-content/raw-content.component';
 import { CommentComponent } from './shared/components/comment/comment.component';
 import { SearchGistsComponent } from './search-gists/search-gists.component';
-import { AppModule  } from './app.module';
+import { AppModule } from './app.module';
 
 
 import { TruncatePipe } from './shared/helpers/truncate';
@@ -19,7 +19,7 @@ import { TruncatePipe } from './shared/helpers/truncate';
 describe('AppComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [ AppModule ],
+      imports: [AppModule],
       schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
     });
   });
